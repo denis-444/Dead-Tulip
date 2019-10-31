@@ -1,0 +1,90 @@
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.Meny {
+    background-color: #474a51;
+    padding: 0px 20px;
+    display: flex;
+}
+
+.Meny :nth-child(2){
+    border-left: 4px solid #26282b;
+}
+
+.Meny button {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    height: 38px;
+    padding: 6px 15px;
+    border: none;
+    background-color: #474a51;
+    cursor: pointer
+}
+
+.Meny button:hover {
+    color: #ffffff;
+    background-color: #26282b;
+}
+
+.contact,
+.about {
+    margin: 30px 0 0 50px;
+    background: url(images/rose.png) no-repeat 94% 10%;
+    min-height: 450px;
+}
+
+.contact p span {
+    font-weight: bold;
+}
+
+.Products{
+    display: flex;
+    padding: 40px 20px ;
+    flex-wrap: wrap;
+    justify-content: space-space-between;
+}
+.product{
+    margin: 10px 41px;
+    width: 190px;
+    border: solid 2px #CCCCCC;
+    text-align: center;
+}
+.product:hover{
+    border: solid 2px #474a51;
+    cursor: pointer;
+}
+
+.product span{
+    font-weight: bold;
+}
+.product img{
+    width: 190px;
+    height: 200px;
+}
+
+.Header{
+    height: 446px;
+}
+
+h1{
+    margin: 0 30px 0 0;
+    font-size: 24px;
+    display: block;
+    color: #ffffff;
+}
+
+.Footer{
+    background-color: #474a51;
+    padding: 10px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Footer a{
+    color: #201e1e;
+    font-weight: bold;
+}

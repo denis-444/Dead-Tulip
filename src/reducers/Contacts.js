@@ -2,12 +2,12 @@ export default function () {
     return[
         {
             id: 1,
-            name: "Телефон",
+            name: "Офис",
             value: "8 0162 94 49 85"
         },
         {
             id: 2,
-            name: "Телефон",
+            name: "Мтс",
             value: "+375-33-777-777-7"
         },
         {

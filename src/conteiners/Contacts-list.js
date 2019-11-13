@@ -1,13 +1,15 @@
 import React, {Component} from "react";
 import {bindActionCreators } from "redux";
 import {connect} from "react-redux";
+import {select } from "../actions/index";
 
 
-class Contactlist extends React.Component {
+class Contactlist extends Component {
     showlist () {
-        return this.props.Contacts.map ((contact) =>{
+        return this.props.Contact.map ((contact) =>{
             return (
-            <p key={contact.id}>{contact.name}</p>
+            <p onClik={() => this.props.select (contact)}
+             key={contact.id}>{contact.name}</p>
             )
         })
     }
@@ -24,8 +26,12 @@ class Contactlist extends React.Component {
 
 function mapStateToProps (state) {
     return {
-        Contacts: state.Contacts
+        Contact: state.Contacts
     }
 }
 
-export default connect(mapStateToProps)(Contactlist);
+function matcDispatchToProps (dispatch) {
+    return bindActionCreators({select:select}, dispatch)
+}
+
+export default connect(mapStateToProps, matcDispatchToProps)(Contactlist);

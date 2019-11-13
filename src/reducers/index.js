@@ -1,8 +1,8 @@
 import {combineReducers} from "redux";
-import ContactsReducers from "./Contacts.js";
+import ContactReducers from "./Contact";
 
 const allReducers = combineReducers ({
-    Contacts: ContactsReducers
+    Contact: ContactReducers
 });
 
 export default allReducers;

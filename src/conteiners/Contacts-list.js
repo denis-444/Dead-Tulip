@@ -6,7 +6,7 @@ import {select} from "../actions/index";
 
 class Contactlist extends Component {
     showlist () {
-        return this.props.Contact.map ((contact) =>{
+        return this.props.Contacts.map ((contact) =>{
             return (
             <p onClik={() => this.props.select (contact)}
              key={contact.id}>{contact.name}</p>
@@ -26,7 +26,7 @@ class Contactlist extends Component {
 
 function mapStateToProps (state) {
     return {
-        Contact: state.Contact
+        Contacts: state.Contacts
     }
 }
 

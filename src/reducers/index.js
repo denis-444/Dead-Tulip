@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import ContactReducers from "./Contact";
-import ActiveContact from "./activ-contact";
+import ContactReducers from "../reducers/Contact";
+import ActiveContact from "../reducers/activ-contact";
 
 const allReducers = combineReducers ({
-    Contact: ContactReducers,
+    Contacts: ContactReducers,
     active: ActiveContact
 });
 

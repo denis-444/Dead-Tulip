@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {bindActionCreators } from "redux";
 import {connect} from "react-redux";
-import {select } from "../actions/index";
+import {select} from "../actions/index";
 
 
 class Contactlist extends Component {
@@ -26,7 +26,7 @@ class Contactlist extends Component {
 
 function mapStateToProps (state) {
     return {
-        Contact: state.Contacts
+        Contact: state.Contact
     }
 }
 

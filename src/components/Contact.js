@@ -9,8 +9,7 @@ class Contact extends React.Component {
         return (
             <div className="contact">
                 <h1>Контакты:</h1>
-                <h3><Contactlist/></h3>
-                <hr/>
+                <div><Contactlist/></div>
                 <Content/>
             </div>
         );

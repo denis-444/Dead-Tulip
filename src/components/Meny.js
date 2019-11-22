@@ -2,11 +2,6 @@ import React, {Fragment} from "react";
 import List from "../components/List";
 import Contact from "../components/Contact";
 import About from "../components/About";
-import {Provider} from "react-redux";
-import {createStore} from 'redux';
-import allReducers from '../reducers';
-
-const store = createStore (allReducers);
 
 class Meny extends React.Component {
 
@@ -32,7 +27,7 @@ class Meny extends React.Component {
                 </div>
                 {active === 1 && <List/>}
                 {active === 2 && <About/>}
-                {active === 3 && <Provider store={store}><Contact/></Provider>}
+                {active === 3 && <Contact/>}
             </Fragment>
         )
     }

@@ -16,7 +16,7 @@ class Content extends Component {
 
 function mapStateToProps (state) {
     return {
-        Contact: state.active
+        contact: state.active
     };
 }
 

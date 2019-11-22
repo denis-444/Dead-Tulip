@@ -89,6 +89,26 @@ h1{
     font-weight: bold;
 }
 
+.contact div{
+    display: flex;
+}
 .contact h1{
     color: #201e1e;
+}
+
+.contact div p{
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    height: 38px;
+    padding: 6px 15px;
+    background-color: #474a51;
+    cursor: pointer;
+    margin-right: 0px;
+    border-right: #ffffff 1px solid;
+}
+
+.contact div p:hover {
+    color: #ffffff;
+    background-color: #26282b;
 }
